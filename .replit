@@ -1,2 +1,2 @@
 language = "rust"
-run = "rustup default stable &&[ -x ~/.cargo/bin/rustlings ] && ~/.cargo/bin/rustlings watch || ./install.sh"
+run = "[ -x ~/.cargo/bin/rustlings ] && ~/.cargo/bin/rustlings watch || (./install.sh && rustup default stable)"
